@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{{ content }}
+{% assign date_format = "%b %-d, %Y" %}
+<br>
+<p>Posted by {{ page.author }},<br>{{ page.date | date: date_format }}</p>

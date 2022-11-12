@@ -1,0 +1,132 @@
+[
+  {
+    "name": "0.3.4",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.3.4",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.3.4",
+    "commit": {
+      "sha": "df8136b62ee3f62c6e0c4cdfa3662b4dd0015c61",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/df8136b62ee3f62c6e0c4cdfa3662b4dd0015c61"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMy40"
+  },
+  {
+    "name": "0.3.3",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.3.3",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.3.3",
+    "commit": {
+      "sha": "bd62840e2b9281cb3fb4034804fa5da65ab50c68",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/bd62840e2b9281cb3fb4034804fa5da65ab50c68"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMy4z"
+  },
+  {
+    "name": "0.3.2",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.3.2",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.3.2",
+    "commit": {
+      "sha": "ae28e2a31180b4611758e195ddcd0ab2649bda3b",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/ae28e2a31180b4611758e195ddcd0ab2649bda3b"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMy4y"
+  },
+  {
+    "name": "0.3.1",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.3.1",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.3.1",
+    "commit": {
+      "sha": "f29e7adac8500349c82e7942c5e016ff542e8d38",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/f29e7adac8500349c82e7942c5e016ff542e8d38"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMy4x"
+  },
+  {
+    "name": "0.3.0",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.3.0",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.3.0",
+    "commit": {
+      "sha": "dbbb48a097e22cd30b5ea586553289d9f50a664b",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/dbbb48a097e22cd30b5ea586553289d9f50a664b"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMy4w"
+  },
+  {
+    "name": "0.2.6",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.2.6",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.2.6",
+    "commit": {
+      "sha": "54b406024ee5d266c902285a17fe6573af71de40",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/54b406024ee5d266c902285a17fe6573af71de40"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMi42"
+  },
+  {
+    "name": "0.2.5",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.2.5",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.2.5",
+    "commit": {
+      "sha": "95778fc0accfb787da79fdb10527d56489ad658f",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/95778fc0accfb787da79fdb10527d56489ad658f"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMi41"
+  },
+  {
+    "name": "0.2.4",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.2.4",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.2.4",
+    "commit": {
+      "sha": "1cba1772778d304aa3e903e5e92f5867eb08c744",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/1cba1772778d304aa3e903e5e92f5867eb08c744"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMi40"
+  },
+  {
+    "name": "0.2.3",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.2.3",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.2.3",
+    "commit": {
+      "sha": "18d6a2f889a7734883919289f905bbec381cee13",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/18d6a2f889a7734883919289f905bbec381cee13"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMi4z"
+  },
+  {
+    "name": "0.2.2",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.2.2",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.2.2",
+    "commit": {
+      "sha": "f4467d6fcb14dbff1f7a2ca038376edb843b9ea7",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/f4467d6fcb14dbff1f7a2ca038376edb843b9ea7"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMi4y"
+  },
+  {
+    "name": "0.2.1",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.2.1",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.2.1",
+    "commit": {
+      "sha": "285e11f525a0d085a70f3ca99312f7c27e1f3ad6",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/285e11f525a0d085a70f3ca99312f7c27e1f3ad6"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMi4x"
+  },
+  {
+    "name": "0.2.0",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.2.0",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.2.0",
+    "commit": {
+      "sha": "bb2a9def016e42c5e837cd039e827d3046b4ddcc",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/bb2a9def016e42c5e837cd039e827d3046b4ddcc"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMi4w"
+  },
+  {
+    "name": "0.1.1",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/refs/tags/0.1.1",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/refs/tags/0.1.1",
+    "commit": {
+      "sha": "3a01390cbd4a572a02c8b77b2c903a41562e8764",
+      "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/commits/3a01390cbd4a572a02c8b77b2c903a41562e8764"
+    },
+    "node_id": "MDM6UmVmNzcyNTA3MjY6cmVmcy90YWdzLzAuMS4x"
+  }
+]

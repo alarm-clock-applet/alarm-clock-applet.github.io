@@ -1,0 +1,335 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #000;
+	background: #4a4a4a;
+	margin: 0;
+	line-height: 1.3;
+}
+
+p {
+	margin: 0.8em 0;
+	line-height: 1.35em;
+}
+
+a {
+	color: #3465a4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #729fcf;
+	/*color: #1f4985;*/
+}
+
+em {
+	font-style: normal;
+	color: #982600;
+/*	letter-spacing: .1em;*/
+}
+
+a img {
+	border: 0;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	/* color: #; */
+}
+
+h1, h2, h3 {
+	color: #982600;
+	font-weight: normal;
+	font-size: 2.7em;
+	margin: 1em 0 .5em 0;
+}
+
+h2 {
+	border-bottom: 2px solid #812a0d;
+}
+
+h2 {
+	color: #812a0d;
+}
+
+h3 {
+	color: #444;
+}
+
+h1 a, h2 a, h3 a {
+	color: inherit;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 2em;
+	clear: both;
+}
+
+h3 {
+	font-size: 1.3em;
+	/*clear: left;*/
+}
+
+dl dt {
+	margin: .5em 0 0 0;
+}
+
+dl dd {
+	margin: 0 0 1em 20px;
+}
+
+ul, ol {
+	padding: 0 0 0 1em;
+	color: #982600;
+	list-style: square;
+	list-style-position: inside;
+}
+
+img {
+	clear: both;
+}
+
+.code {
+	background: #ccc;
+	padding: 3px;
+	border-left: 5px solid #666;
+}
+
+.code > * {
+	display: block;
+}
+
+p code {
+	background: #ddd;
+}
+
+code:hover {
+	background: #ffe399;
+}
+
+#container {
+	width: 700px;
+	margin: 0 auto;
+	border: 30px solid #303030;
+	border-width: 2px 5px 0 5px;
+	background: #fff;
+	padding: 30px 0 0 0;
+	margin-top: 80px;
+}
+
+#header {
+	text-align: center;
+	height: 130px;
+	margin-top: -88px;
+}
+
+#logo {
+	margin: 0 auto;
+	line-height: 180px;
+	background: url(../graphics/alarm-clock.svg) top center no-repeat;
+}
+
+#features div {
+	clear: both;
+}
+
+/*
+ * MENU
+ */
+.menu, .menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	z-index: 100;
+}
+
+.menu a, .menu li {
+	display: block;
+}
+
+.menu a {
+	text-decoration: none;
+	cursor: pointer; 
+}
+
+.menu li a {
+	padding: .3em;
+	text-align: center;
+}
+
+.menu li a:hover {
+	border-color: #ffcc00;
+}
+
+.menu li {
+	float: left;
+	margin-right: 20px;
+}
+
+#navigation {
+	background: transparent;
+	text-align: center;
+	height: 1.6em;
+	border-bottom: 2px solid #ddd;
+}
+
+#navigation li a {
+	line-height: 1em;
+}
+
+#navigation li a:hover {
+	border-bottom: 2px solid #333;
+}
+
+li#nav-intro {
+	margin-left: 4em;
+}
+
+li#nav-bugs {
+	margin-right: 0em;
+}
+
+#main {
+	padding: 2.5em;
+}
+
+#intro {
+	font-weight: bold;
+}
+
+#news dl dt {
+	background: url(../graphics/news.svg) center left no-repeat;
+	padding-left: 20px;
+}
+
+#news dl dd p {
+	margin: 0;
+}
+
+#news a.atom-feed {
+	line-height: 0;
+}
+
+.atom-feed > img {
+	width: 16px;
+	height: 16px;
+}
+
+#features-multiple {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+#features-notification img#edit-alarm {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+img#alarm-menu {
+	float: right;
+	margin-left: 1em;
+}
+
+#notify-bubble {
+	clear: both;
+}
+
+#features div {
+	margin-bottom: 4em;
+	clear: both;
+}
+
+#download ul {
+	list-style: none;
+}
+
+#download ul li a {
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+#download ul li img {
+	vertical-align: middle;
+	filter: grayscale(100%);
+	width: 24px;
+	height: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#download ul li.latest img {
+	font-weight: bold;
+	filter: grayscale(0);
+}
+
+#install-button > span {
+	vertical-align: middle;
+}
+
+#install-button > img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	padding-right: 0.5em;
+}
+
+#install-button {
+	background: #4C9800;
+	color: #fff;
+	display: block;
+	margin: 1em 0;
+	padding: 1em;
+	display: inline-block;
+}
+
+#install-button:hover, #install-button:active, #install-button:focus {
+	background-color: #59B300;
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer {
+	background: #303030;
+	text-align: center;
+	color: #aaa;
+	font-size: .8em;
+	padding-top: 0.5em;
+}
+
+.date {
+	float: right;
+}
+
+#news-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 1em 0 .5em 0;
+	border-bottom: 2px solid #812a0d;
+}
+
+#news-heading h2 {
+	border-bottom: none;
+	margin: 0;
+}
+
+* {
+	box-sizing: content-box;
+}
+
+.inline-img {
+	padding-right: 0.3em;
+	vertical-align: bottom;
+	width: 16px;
+	height: 16px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
