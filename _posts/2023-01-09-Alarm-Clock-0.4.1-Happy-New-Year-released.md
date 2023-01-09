@@ -3,7 +3,7 @@ title:  "Alarm Clock 0.4.1 \"Happy New Year\" released!"
 date:   2023-01-09 05:13:01 
 author: "Tasos Sahanidis"
 ---
-#### [GitHub Release](https://github.com/alarm-clock-applet/alarm-clock/releases/tag/alarm-clock-applet-0.4.1)
+#### [GitHub Release](https://github.com/alarm-clock-applet/alarm-clock/releases/tag/0.4.1)
 This release fixes numerous issues and removes all legacy dependencies. The minimum supported Ubuntu version is now 18.04.
 
 ### Major Changes:

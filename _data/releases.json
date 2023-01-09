@@ -3,7 +3,7 @@
     "url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/releases/88267534",
     "assets_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/releases/88267534/assets",
     "upload_url": "https://uploads.github.com/repos/alarm-clock-applet/alarm-clock/releases/88267534/assets{?name,label}",
-    "html_url": "https://github.com/alarm-clock-applet/alarm-clock/releases/tag/alarm-clock-applet-0.4.1",
+    "html_url": "https://github.com/alarm-clock-applet/alarm-clock/releases/tag/0.4.1",
     "id": 88267534,
     "author": {
       "login": "tatokis",
@@ -26,7 +26,7 @@
       "site_admin": false
     },
     "node_id": "RE_kwDOBJrAps4FQtsO",
-    "tag_name": "alarm-clock-applet-0.4.1",
+    "tag_name": "0.4.1",
     "target_commitish": "master",
     "name": "Alarm Clock 0.4.1 \"Happy New Year\"",
     "draft": false,
@@ -36,8 +36,8 @@
     "assets": [
 
     ],
-    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/alarm-clock-applet-0.4.1",
-    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/alarm-clock-applet-0.4.1",
+    "tarball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/tarball/0.4.1",
+    "zipball_url": "https://api.github.com/repos/alarm-clock-applet/alarm-clock/zipball/0.4.1",
     "body": "This release fixes numerous issues and removes all legacy dependencies. The minimum supported Ubuntu version is now 18.04.\r\n\r\n### Major Changes:\r\n* The application has been ported to GTK 3, and will thus look slightly different.\r\n* Old GTK Tray Icon support has been removed. A desktop environment with support for AppIndicators/StatusNotifierItem is required.\r\n* Alarms have been migrated to GSettings.\r\n\r\n### Notable Fixes:\r\n* Many memory leaks (including a massive one while the UI was visible)\r\n* Alarm labels bouncing horizontally every second\r\n* Debug messages breaking alarms and timers\r\n* Compile errors\r\n\r\n### New Features:\r\n* Default media players are now autodetected.\r\n* More media players can be controlled using playerctl out of the box.\r\n* More system sounds are now added to the list by default.\r\n\r\n### Full Changelog:\r\n[0.3.4...0.4.1](https://github.com/alarm-clock-applet/alarm-clock/compare/0.3.4...0.4.1)\r\n\r\n### Notes for package maintainers:\r\nMany dependencies have changed and the project is now built with CMake. If available, please build with GConf2 support enabled so that people can migrate any old alarms they might have, even if they built from source previously. If possible, also add `playerctl` as an optional/recommended dependency; its presence is detected at runtime.\r\n\r\n### What happened to 0.4.0?\r\nIt was meant to be tagged right before the major rewrite/porting work started, however it was tagged at the wrong commit by accident, and is thus now ignored."
   }
 ]

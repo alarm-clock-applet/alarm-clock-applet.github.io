@@ -8,7 +8,7 @@ For now we just download and parse the json
 {%- assign repository = repository_array[0] -%}
 {%- endcomment -%}
 {%- assign releases = site.data.releases -%}
-{%- assign latest_ver = releases[0].tag_name | replace: "alarm-clock-applet-", "" -%}
+{%- assign latest_ver = releases[0].tag_name -%}
 <div id="intro">
     <h2>Introduction</h2>
     <p><em>Alarm Clock</em> is a fully-featured alarm clock for use with an AppIndicator implementation.
@@ -107,7 +107,7 @@ sudo apt update</code></pre>and entering your password when requested.
     <p>The latest stable release is <em>Alarm Clock <strong>{{ latest_ver }}</strong></em>.</p>
     <ul>
         {%- for release in releases -%}
-        <li{% if forloop.first %} class="latest"{% endif %}><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://github.com/alarm-clock-applet/alarm-clock/archive/refs/tags/{{ release.tag_name }}.tar.gz">{{ release.tag_name }}.tar.gz</a></li>
+        <li{% if forloop.first %} class="latest"{% endif %}><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://github.com/alarm-clock-applet/alarm-clock/archive/refs/tags/{{ release.tag_name }}.tar.gz">alarm-clock-{{ release.tag_name }}.tar.gz</a></li>
         {%- endfor -%}
         <li><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://launchpad.net/alarm-clock/trunk/0.3.4/+download/alarm-clock-applet-0.3.4.tar.gz">alarm-clock-applet-0.3.4.tar.gz</a></li>
         <li><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://launchpad.net/alarm-clock/trunk/0.3.3/+download/alarm-clock-applet-0.3.3.tar.gz">alarm-clock-applet-0.3.3.tar.gz</a></li>
