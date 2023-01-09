@@ -7,7 +7,8 @@ For now we just download and parse the json
 {%- assign repository_array = site.github.public_repositories | where: 'name', 'alarm-clock' -%}
 {%- assign repository = repository_array[0] -%}
 {%- endcomment -%}
-{%- assign latest = site.data.tags[0].name -%}
+{%- assign releases = site.data.releases -%}
+{%- assign latest_ver = releases[0].tag_name | replace: "alarm-clock-applet-", "" -%}
 <div id="intro">
     <h2>Introduction</h2>
     <p><em>Alarm Clock</em> is a fully-featured alarm clock for use with an AppIndicator implementation.
@@ -21,9 +22,6 @@ For now we just download and parse the json
         <h2>News</h2>
         <a class="atom-feed" href="/feed.xml" title="Atom 1.0 feed"><img src="assets/graphics/rss.svg" alt="Atom Feed"/></a>
     </div>
-    {%- comment -%}
-    FIXME: Fetch releases from github
-    {%- endcomment -%}
     {%- assign posts = site.posts -%}
     {%- if posts.size > 0 -%}
     <dl>
@@ -106,12 +104,12 @@ sudo apt update</code></pre>and entering your password when requested.
 
 <div id="download">
     <h2>Downloads</h2>
-    <p>The latest stable release is <em>Alarm Clock <strong>{{ latest }}</strong></em>.</p>
+    <p>The latest stable release is <em>Alarm Clock <strong>{{ latest_ver }}</strong></em>.</p>
     <ul>
-        {%- comment -%}
-        FIXME: Fetch releases from github
-        {%- endcomment -%}
-        <li class="latest"><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://launchpad.net/alarm-clock/trunk/0.3.4/+download/alarm-clock-applet-0.3.4.tar.gz">alarm-clock-applet-0.3.4.tar.gz</a></li>
+        {%- for release in releases -%}
+        <li{% if forloop.first %} class="latest"{% endif %}><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://github.com/alarm-clock-applet/alarm-clock/archive/refs/tags/{{ release.tag_name }}.tar.gz">{{ release.tag_name }}.tar.gz</a></li>
+        {%- endfor -%}
+        <li><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://launchpad.net/alarm-clock/trunk/0.3.4/+download/alarm-clock-applet-0.3.4.tar.gz">alarm-clock-applet-0.3.4.tar.gz</a></li>
         <li><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://launchpad.net/alarm-clock/trunk/0.3.3/+download/alarm-clock-applet-0.3.3.tar.gz">alarm-clock-applet-0.3.3.tar.gz</a></li>
         <li><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://launchpad.net/alarm-clock/trunk/0.3.2/+download/alarm-clock-applet-0.3.2.tar.gz">alarm-clock-applet-0.3.2.tar.gz</a></li>
         <li><img class="inline-img" src="/assets/graphics/alarm-clock.svg" alt="Clock"><a href="https://launchpad.net/alarm-clock/trunk/0.3.1/+download/alarm-clock-applet-0.3.1.tar.gz">alarm-clock-applet-0.3.1.tar.gz</a></li>
@@ -138,7 +136,7 @@ sudo apt update</code></pre>and entering your password when requested.
     {{ requirements_ubuntu | prepend: "#" | markdownify }}
 
     {% capture build_from_source %}{%- include build_from_source.md -%}{% endcapture %}
-    {{ build_from_source | prepend: "#" | replace: "<VERSION>", latest | markdownify }}
+    {{ build_from_source | prepend: "#" | replace: "<VERSION>", latest_ver | markdownify }}
 </div>
 
 <div id="bugs">
