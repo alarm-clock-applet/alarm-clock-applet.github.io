@@ -9,6 +9,7 @@ For now we just download and parse the json
 {%- endcomment -%}
 {%- assign latest = site.data.tags[0].name -%}
 <div id="intro">
+    <h2>Introduction</h2>
     <p><em>Alarm Clock</em> is a fully-featured alarm clock for use with an AppIndicator implementation.
        It's <a href="#features-easy">easy to use</a> yet <a href="#features-powerful">powerful</a> with support for
        <a href="#features-multiple">multiple</a> <a href="#features-repeat">repeatable</a> alarms, as well as 
@@ -80,20 +81,32 @@ For now we just download and parse the json
     </div>
 </div>
 
-<div id="download">
-    <h2>Downloads</h2>
-    <p>The latest stable release is <strong><em>Alarm Clock</em> {{ latest }}</strong>.</p>
+<div id="install">
+    <h2>Installation</h2>
+    <h3 id="ubuntu">Ubuntu, Linux Mint &amp; derivatives</h3>
     {%- comment -%}
     <p>If you're on Ubuntu XX.XX "unknown codename" or later, you can install <em>Alarm Clock</em> by clicking this big green button:
     {%- endcomment -%}
+    <p><em>Alarm Clock</em> is currently not present in the Ubuntu repositories. To install it, first add the <a href="https://launchpad.net/~tatokis/+archive/ubuntu/alarm-clock-applet">PPA</a> by running the following two commands in a terminal:
+    <pre class="code"><code>sudo add-apt-repository -y ppa:tatokis/alarm-clock-applet
+sudo apt update</code></pre>and entering your password when requested.
+    </p>
+    <p>Then, you can click the big button below to install!<br>
+    <a id="install-button" href="apt://alarm-clock-applet"><img src="/assets/graphics/alarm-clock.svg" alt="Clock"><span>Yes, I want it!</span></a><br>
+    This will install the <strong>alarm-clock-applet</strong> package. If the button above does not work, you can also install it using the terminal by running <pre class="code"><code>sudo apt install alarm-clock-applet</code></pre></p>
+    <h3 id="arch">Arch Linux, Manjaro, EndeavourOS &amp; derivatives</h3>
+    <p><em>Alarm Clock</em> can be installed from the <a href="https://aur.archlinux.org/packages/alarm-clock-applet">AUR</a>.</p><p>Please make sure you have first read through the <a href="https://wiki.archlinux.org/title/Arch_User_Repository">Arch Wiki AUR page</a>, especially the note in the <a href="https://wiki.archlinux.org/title/Arch_User_Repository#Installing_and_upgrading_packages">Installing and upgrading packages</a> section.</p>
+    <p><b>Any issues opened about errors while loading shared libraries on Arch-based systems will be closed.</b></p>
     {%- comment -%}
-    <p>For the latest version with the greatest features, there is a <a href="https://launchpad.net/~tatokis/+archive/ubuntu/alarm-clock-applet">PPA available</a>.
-       To add it, follow the instructions on the PPA page. When you're finished you can click the big button below to install!</p>
-    <a id="install-button" href="apt:alarm-clock-applet"><img src="/assets/graphics/alarm-clock.svg" alt="Clock"><span>Yes, I want it!</span></a><br>
-    This will install the <strong>alarm-clock-applet</strong> package.</p>
-    <p>Source tarballs are also available:</p>
+    <h3 id="debian">Debian</h3>
+    <p><em>Alarm Clock</em> is currently only present in Debian testing repository. You can click the <a href="#install-button">big button above</a>.
+    If you do not use Debian testing, you will need to manually <a href="#build-from-source">build from source</a>, or create your own Debian packages.</p>
     {%- endcomment -%}
+</div>
 
+<div id="download">
+    <h2>Downloads</h2>
+    <p>The latest stable release is <em>Alarm Clock <strong>{{ latest }}</strong></em>.</p>
     <ul>
         {%- comment -%}
         FIXME: Fetch releases from github
@@ -117,30 +130,18 @@ For now we just download and parse the json
     <p>(In version 0.2, the project changed name from Alarm Applet to <em>Alarm Clock</em>)</p>
 </div>
 
-<div id="install">
-    <h2>Installation</h2>
-    <p>Refer to the <a href="#download">download</a> section above for information on how to obtain and install <em>Alarm Clock</em> on
-    <a href="https://www.ubuntu.com/">Ubuntu</a>. This section describes the process of installing <em>Alarm Clock</em> from source.</p>
-    <p>Install with the usual:</p>
-    <pre class="code"><code>tar zxvf alarm-clock-applet-{{ latest }}.tar.gz
-cd alarm-clock-applet-{{ latest }}/
-mkdir build &amp;&amp; cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make
-sudo make install</code></pre>
-    <p>Check the <code><a href="https://github.com/alarm-clock-applet/alarm-clock/blob/master/README.md">README</a></code> for dependencies. They're usually in the *-dev packages in most distributions.
-       If you're on Debian / Ubuntu, install the following before running <code>cmake</code>:</p>
-    <div class="code">
-        <code>sudo apt install cmake libgconf2-dev libxml2-dev libgtk-3-dev libgstreamer1.0-dev libnotify-dev libayatana-appindicator3-dev gettext gnome-icon-theme</code>
-    </div>
-{%- comment -%}
-    <h3>Application indicators</h3>
-    <p><em>Alarm Clock</em> can be built with <a href="http://unity.ubuntu.com/projects/appindicators/">application indicator</a> support.
-       Support is detected automatically by <code>configure</code> and can be controlled with the <code>--enable-appindicator</code> flag.</p>
-{%- endcomment -%}
+<div id="build-from-source">
+    <h2>Build from Source</h2>
+    <h3>Requirements</h3>
+    <p>Please check the <a href="https://github.com/alarm-clock-applet/alarm-clock#requirements">Requirements</a> section of the <a href="https://github.com/alarm-clock-applet/alarm-clock/blob/master/README.md">README</a> for information regarding dependencies. They're usually in the *-dev or *-devel packages in most distributions.</p>
+    {% capture requirements_ubuntu %}{%- include requirements_ubuntu.md -%}{% endcapture %}
+    {{ requirements_ubuntu | prepend: "#" | markdownify }}
+
+    {% capture build_from_source %}{%- include build_from_source.md -%}{% endcapture %}
+    {{ build_from_source | prepend: "#" | replace: "<VERSION>", latest | markdownify }}
 </div>
 
 <div id="bugs">
-    <h2>Bugs &amp; suggestions</h2>
+    <h2>Bugs &amp; Suggestions</h2>
     <p>Please post any bugs and suggestions to the <a href="https://github.com/alarm-clock-applet/alarm-clock/issues">GitHub issue tracker</a>!{% comment %} Feedback on the various <a href="https://blueprints.launchpad.net/alarm-clock/">blueprints</a> is also greatly appreciated.{% endcomment %} If you'd like to see <em>Alarm Clock</em> speak your native tongue, consider helping out with the <a href="https://translations.launchpad.net/alarm-clock">translations</a>!</p>
 </div>

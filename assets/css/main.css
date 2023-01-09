@@ -39,7 +39,7 @@ a:hover, a:active, a:focus {
 	/* color: #; */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-weight: normal;
 	margin: 1em 0 .5em 0;
 }
@@ -69,6 +69,11 @@ h3 {
 	border-bottom: 1px solid #500;
 }
 
+h4 {
+	font-size: 1.1em;
+	color: #500;
+}
+
 dl dt {
 	margin: .5em 0 0 0;
 }
@@ -88,18 +93,15 @@ img {
 	clear: both;
 }
 
-.code {
+.code, pre.highlight {
 	background: #ccc;
 	padding: 3px;
 	border-left: 5px solid #666;
+	white-space: pre-wrap;
 }
 
-.code > * {
+.code > *, pre.highlight > * {
 	display: block;
-}
-
-p code {
-	background: #ddd;
 }
 
 code:hover {
@@ -107,19 +109,23 @@ code:hover {
 }
 
 #container {
-	width: 700px;
+	width: 980px;
 	margin: 0 auto;
 	border: 30px solid #303030;
-	border-width: 2px 5px 0 5px;
+	border-width: 5px 5px 0 5px;
 	background: #fff;
 	padding: 30px 0 0 0;
 	margin-top: 80px;
 }
 
+#subcontainer {
+	padding: 2.5em;
+}
+
 #header {
 	text-align: center;
 	height: 130px;
-	margin-top: -88px;
+	margin-top: -110px;
 }
 
 #logo {
@@ -135,41 +141,30 @@ code:hover {
 /*
  * MENU
  */
-.menu, .menu ul {
-	margin: 0;
-	padding: 0;
+.menu {
 	list-style: none;
-	z-index: 100;
-}
-
-.menu a, .menu li {
-	display: block;
+	display: flex;
+	padding: 0;
+	justify-content: space-between;
 }
 
 .menu a {
 	text-decoration: none;
-	cursor: pointer; 
 }
 
 .menu li a {
 	padding: .3em;
-	text-align: center;
 }
 
 .menu li a:hover {
 	border-color: #ffcc00;
 }
 
-.menu li {
-	float: left;
-	margin-right: 20px;
-}
-
 #navigation {
-	background: transparent;
-	text-align: center;
 	height: 1.6em;
 	border-bottom: 2px solid #ddd;
+	font-size: 1.3em;
+	font-weight: bold;
 }
 
 #navigation li a {
@@ -178,18 +173,6 @@ code:hover {
 
 #navigation li a:hover {
 	border-bottom: 2px solid #333;
-}
-
-li#nav-intro {
-	margin-left: 4em;
-}
-
-li#nav-bugs {
-	margin-right: 0em;
-}
-
-#main {
-	padding: 2.5em;
 }
 
 #intro {

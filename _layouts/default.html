@@ -17,10 +17,12 @@
 </head>
 <body>
     <div id="container">
-        {%- include header.html -%}
-        <main id="main">
-            {{ content }}
-        </main>
+        <div id="subcontainer">
+            {%- include header.html -%}
+            <main id="main">
+                {{ content }}
+            </main>
+        </div>
         {%- include footer.html -%}
     </div>
 </body>
