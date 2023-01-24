@@ -4,10 +4,7 @@ import datetime
 import pathlib
 import sys
 import re
-
-authors = {
-    "tatokis": "Tasos Sahanidis",
-}
+import common
 
 with open("_data/releases.json") as jf:
     jrel = json.load(jf)
@@ -26,7 +23,7 @@ with open("_data/releases.json") as jf:
 
         processed += 1
 
-        author = authors[rel["author"]["login"]] if rel["author"]["login"] in authors else rel["author"]["login"]
+        author = common.authors[rel["author"]["login"]] if rel["author"]["login"] in common.authors else rel["author"]["login"]
         datestr = date.strftime('%Y-%m-%d %H:%M:%S %z')
 
         nl = "\n"
