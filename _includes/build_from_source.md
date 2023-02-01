@@ -1,4 +1,3 @@
-## Building and Installing
 Download and extract the source code with:
 ```
 wget --content-disposition https://github.com/alarm-clock-applet/alarm-clock/archive/refs/tags/<VERSION>.tar.gz

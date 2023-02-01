@@ -135,8 +135,9 @@ sudo apt update</code></pre>and entering your password when requested.
     {% capture requirements_ubuntu %}{%- include requirements_ubuntu.md -%}{% endcapture %}
     {{ requirements_ubuntu | prepend: "#" | markdownify }}
 
+    <h3 id="building-and-installing">Building and Installing</h3>
     {% capture build_from_source %}{%- include build_from_source.md -%}{% endcapture %}
-    {{ build_from_source | prepend: "#" | replace: "<VERSION>", latest_ver | markdownify }}
+    {{ build_from_source | replace: "<VERSION>", latest_ver | markdownify }}
 </div>
 
 <div id="bugs">
