@@ -37,14 +37,6 @@ For now we just download and parse the json
       {%- endfor -%}
     </dl>
     {%- endif -%}
-    {% comment %}
-    <h3>Latest activity</h3>
-    <a class="atom-feed" href="#" title="Atom 1.0 feed"><img src="assets/graphics/rss.svg" alt="Atom Feed"/></a>
-    <dl>
-        <dt><a href="FIXME" title="Posted FIXME">FIXME</a></dt>
-        <dd>FIXME</dd>
-    </dl>
-    {% endcomment %}
 </div>
 <div id="features">
     <h2>Features</h2>
@@ -81,25 +73,19 @@ For now we just download and parse the json
 
 <div id="install">
     <h2>Installation</h2>
-    <h3 id="ubuntu">Ubuntu, Linux Mint &amp; derivatives</h3>
-    {%- comment -%}
-    <p>If you're on Ubuntu XX.XX "unknown codename" or later, you can install <em>Alarm Clock</em> by clicking this big green button:
-    {%- endcomment -%}
-    <p><em>Alarm Clock</em> is currently not present in the Ubuntu repositories. To install it, first add the <a href="https://launchpad.net/~tatokis/+archive/ubuntu/alarm-clock-applet">PPA</a> by running the following two commands in a terminal:
+    <h3 id="ubuntu">Debian, Linux Mint, Ubuntu &amp; derivatives</h3>
+    <p>If you are running <strong>Ubuntu 23.04 "Lunar Lobster"</strong>, <strong>Debian 12 "Bookworm"</strong>, <strong>or newer</strong>, you can install <em>Alarm Clock</em> by simply clicking <a href="#install-button">the big green button below</a>.
+    <p>If you are running <strong>an older version of Ubuntu, Linux Mint</strong>, or you simply want the latest version of <em>Alarm Clock</em>, first add the <a href="https://launchpad.net/~tatokis/+archive/ubuntu/alarm-clock-applet">PPA</a> by running the following two commands in a terminal:
     <pre class="code"><code>sudo add-apt-repository -y ppa:tatokis/alarm-clock-applet
 sudo apt update</code></pre>and entering your password when requested.
     </p>
     <p>Then, you can click the big button below to install!<br>
     <a id="install-button" href="apt://alarm-clock-applet"><img src="/assets/graphics/alarm-clock.svg" alt="Clock"><span>Yes, I want it!</span></a><br>
-    This will install the <strong>alarm-clock-applet</strong> package. If the button above does not work, you can also install it using the terminal by running <pre class="code"><code>sudo apt install alarm-clock-applet</code></pre></p>
+    This will install the <em>alarm-clock-applet</em> package. If the button above does not work, you can also install it using the terminal by running <pre class="code"><code>sudo apt install alarm-clock-applet</code></pre> or by searching for <em>alarm-clock-applet</em> in your preferred Software Centre.</p>
+    <p>If you are running <strong>an version of Debian older than 12 "Bookworm"</strong>, you will need to <a href="#build-from-source">manually build from source</a>.
     <h3 id="arch">Arch Linux, Manjaro, EndeavourOS &amp; derivatives</h3>
     <p><em>Alarm Clock</em> can be installed from the <a href="https://aur.archlinux.org/packages/alarm-clock-applet">AUR</a>.</p><p>Please make sure you have first read through the <a href="https://wiki.archlinux.org/title/Arch_User_Repository">Arch Wiki AUR page</a>, especially the note in the <a href="https://wiki.archlinux.org/title/Arch_User_Repository#Installing_and_upgrading_packages">Installing and upgrading packages</a> section.</p>
-    <p><b>Any issues opened about errors while loading shared libraries on Arch-based systems will be closed.</b></p>
-    {%- comment -%}
-    <h3 id="debian">Debian</h3>
-    <p><em>Alarm Clock</em> is currently only present in Debian testing repository. You can click the <a href="#install-button">big button above</a>.
-    If you do not use Debian testing, you will need to manually <a href="#build-from-source">build from source</a>, or create your own Debian packages.</p>
-    {%- endcomment -%}
+    <p><strong>Any issues opened about errors while loading shared libraries on Arch-based systems will be closed.</strong></p>
 </div>
 
 <div id="download">
@@ -142,5 +128,5 @@ sudo apt update</code></pre>and entering your password when requested.
 
 <div id="bugs">
     <h2>Bugs &amp; Suggestions</h2>
-    <p>Please post any bugs and suggestions to the <a href="https://github.com/alarm-clock-applet/alarm-clock/issues">GitHub issue tracker</a>!{% comment %} Feedback on the various <a href="https://blueprints.launchpad.net/alarm-clock/">blueprints</a> is also greatly appreciated.{% endcomment %} If you'd like to see <em>Alarm Clock</em> speak your native tongue, consider helping out with the <a href="https://translations.launchpad.net/alarm-clock">translations</a>!</p>
+    <p>Please post any bugs and suggestions to the <a href="https://github.com/alarm-clock-applet/alarm-clock/issues">GitHub issue tracker</a>! If you'd like to see <em>Alarm Clock</em> speak your native tongue, consider helping out with the <a href="https://translations.launchpad.net/alarm-clock">translations</a>!</p>
 </div>
