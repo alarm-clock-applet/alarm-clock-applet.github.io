@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="news">
+    <div id="news-heading">
+        <h2>All News</h2>
+        <a class="atom-feed" href="/feed.xml" title="Atom 1.0 feed"><img src="assets/graphics/rss.svg" alt="Atom Feed"/></a>
+    </div>
+    {%- assign posts = site.posts -%}
+    {%- if posts.size > 0 -%}
+    <dl>
+      {%- assign date_format = "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+        <dt>
+            <a href="{{ post.url | relative_url }}" title="Posted {{ post.date | date: date_format }}">
+                {{ post.title | escape }}
+            </a>
+            <span class="date">Posted {{ post.date | date: date_format }}</span>
+        </dt>
+        <dd>{{ post.content }}</dd>
+      {%- endfor -%}
+    </dl>
+    {%- endif -%}
+</div>

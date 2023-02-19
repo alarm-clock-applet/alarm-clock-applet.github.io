@@ -26,7 +26,7 @@ For now we just download and parse the json
     {%- if posts.size > 0 -%}
     <dl>
       {%- assign date_format = "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+      {%- for post in posts limit:6 -%}
         <dt>
             <a href="{{ post.url | relative_url }}" title="Posted {{ post.date | date: date_format }}">
                 {{ post.title | escape }}
@@ -37,6 +37,7 @@ For now we just download and parse the json
       {%- endfor -%}
     </dl>
     {%- endif -%}
+    <dl><dt><a href="/news.html" class="date">Older News</a></dt><dd></dd></dl>
 </div>
 <div id="features">
     <h2>Features</h2>
